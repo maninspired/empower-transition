@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmPower Solar Support Transition</title>
+    <style>
+        /* CSS Variables based on brand guidelines */
+        :root {
+            --dark-blue: #000028;
+            --blue: #0075eb;
+            --electric-blue: #292bd4;
+            --gray-green: #b5d4cc;
+            --white: #ffffff;
+            --black-tint-10: #f2f2f2; /* Approximation for light gray card */
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fallback for Cera Pro */
+            margin: 0;
+            padding: 0;
+            color: var(--dark-blue);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+
+        /* Section 1: Header */
+        header {
+            background-color: var(--dark-blue);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .header-contact {
+            text-align: right;
+            color: var(--white);
+            font-size: 0.95em;
+        }
+
+        .header-contact span {
+            color: var(--gray-green);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .header-contact-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .header-contact-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header-contact-links a:hover {
+            color: var(--gray-green);
+        }
+
+        @media (max-width: 600px) {
+            .header-contact {
+                text-align: left;
+            }
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+        }
+
+        /* Section 2: Hero & Official Announcement */
+        .hero {
+            background: linear-gradient(to right, var(--dark-blue), var(--blue)); /* Gradient DB-B */
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Subtle White Dot Pattern Overlay */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(var(--white) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.1; /* Extremely subtle */
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            font-size: 1.1em;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Section 3: Transitioning Your Support */
+        .transition-section {
+            background-color: var(--black-tint-10);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .transition-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .transition-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: var(--dark-blue);
+        }
+
+        /* Section 4: Legal Boundaries Grid */
+        .legal-section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .legal-section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: var(--dark-blue);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--black-tint-10);
+            border: 2px solid var(--gray-green); /* Accent border */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: var(--blue);
+            margin-top: 0;
+        }
+
+        /* Section 5: Action Center */
+        .action-section {
+            background-color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .action-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 2px solid var(--blue);
+            border-radius: 8px;
+        }
+
+        .action-box h2 {
+            margin-top: 0;
+            color: var(--dark-blue);
+        }
+
+        .cta-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--electric-blue);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--blue);
+        }
+
+        /* Section 7: Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1: Header -->
+    <header>
+        <!-- Note: Replace with actual path to the White Horizontal Logo -->
+        <img src="empower_logo_white.png" alt="EmPower Solar" class="logo">
+        <div class="header-contact">
+            <span>Marcor Solar Support:</span>
+            <div class="header-contact-links">
+                <a href="tel:6313549106">📞 631-354-9106</a>
+                <a href="mailto:solutions@marcorinstalls.com">✉️ solutions@marcorinstalls.com</a>
+                <a href="https://www.marcorsolar.com" target="_blank">🌐 www.marcorsolar.com</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 2: Hero & Official Announcement -->
+    <section class="hero">
+        <h1>Official Announcement & Support Transition</h1>
+        <h2>Important Administrative Notice for EmPower Solar Customers — March 30, 2026</h2>
+        <p>For over 20 years, EmPower Solar has been proud to serve as your partner in renewable energy and a leader driving our industry forward. However, we are writing to inform you that EmPower Solar is no longer conducting business operations.</p>
+        <p>While this chapter is closing for EmPower, we want to ensure you have a clear, reliable path forward for the continued maintenance and support of your solar investment. We thank you deeply for your partnership, your trust, and your commitment to clean energy over the years.</p>
+    </section>
+
+    <!-- Section 3: Transitioning Your Support to Marcor Solar -->
+    <section class="transition-section">
+        <div class="transition-content">
+            <h2>Your New Point of Contact: Marcor Solar</h2>
+            <p>To ensure our customers aren't left without support, we are pleased to announce that <strong>Marcor Solar</strong> and its subsidiaries have stepped forward to assist EmPower Solar customers with their ongoing solar and home energy needs.</p>
+            <p>Marcor Solar is a reputable industry leader with a dedicated service department fully equipped to handle system monitoring, repairs, technical support, system upgrades, and system expansions.</p>
+            <p><strong>You do not need to take any immediate action.</strong> Your solar power system will continue to operate normally. However, if you require a system health check, need help navigating a manufacturer warranty claim, or have questions about your monitoring software, the Marcor team is ready to assist you.</p>
+        </div>
+    </section>
+
+    <!-- Section 4: Important Notice Regarding Warranties and Liabilities -->
+    <section class="legal-section">
+        <h2>Understanding Your Coverage & Legal Distinctions</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Separate Legal Entities</h3>
+                <p>Marcor Solar has not purchased EmPower Solar’s corporate entities and is not a successor to EmPower Solar or its business or obligations. Because Marcor Solar is a separate company, they do not hold any of the legal or financial responsibilities that previously belonged to EmPower Solar.</p>
+            </div>
+            <div class="card">
+                <h3>Workmanship Warranties</h3>
+                <p>Since Marcor Solar is a completely separate entity, they are unable to honor or take over workmanship warranties originally provided by EmPower Solar.</p>
+            </div>
+            <div class="card">
+                <h3>Valid Equipment Warranties</h3>
+                <p>Your equipment (including panels, inverters, and batteries) usually carries a warranty directly from the manufacturer. These remain fully valid. If you encounter an equipment issue covered by your manufacturer’s warranty, Marcor Solar can act as your representative to handle the paperwork and facilitate these manufacturer claims for you (note that Marcor Solar will charge a fee for this service).</p>
+            </div>
+            <div class="card">
+                <h3>Standard Service Agreements</h3>
+                <p>If you require maintenance, system health checks, or repairs in the future, any service work performed by Marcor Solar on your system will be billed at Marcor Solar's standard service rates and terms once you have signed a new written service agreement with them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Customer Action Center -->
+    <section class="action-section">
+        <div class="action-box">
+            <h2>How to Contact Marcor Solar Support</h2>
+            <p>Please reach out to Marcor Solar’s dedicated support channels below for any assistance with your system:</p>
+            <div class="cta-container">
+                <a href="tel:6313549106" class="cta-button">📞 Phone Support: Call 631-354-9106</a>
+                <a href="mailto:solutions@marcorinstalls.com" class="cta-button">✉️ Email Support: solutions@marcorinstalls.com</a>
+                <a href="https://www.marcorsolar.com" class="cta-button" target="_blank">🌐 Online Support: Visit www.marcorsolar.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Footer -->
+    <footer>
+        <p>This is a mandatory administrative notification regarding your solar installation. EmPower Solar Administration.</p>
+    </footer>
+
+</body>
+</html>
