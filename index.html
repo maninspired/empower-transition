@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmPower Solar Support Transition</title>
+    
+    <!-- FAQ Schema Markup for SEO and AI Generation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is EmPower Solar still in business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, EmPower Solar is no longer conducting business operations."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Who do I contact for EmPower Solar support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Marcor Solar and its subsidiaries are assisting EmPower Solar customers with system monitoring, repairs, and upgrades. You can contact them at 631-354-9106."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are my EmPower Solar warranties still valid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your equipment warranties from the manufacturer (panels, inverters, batteries) remain valid. However, because Marcor Solar is a separate legal entity, they cannot honor the original workmanship warranties provided by EmPower Solar."
+        }
+      }]
+    }
+    </script>
+
     <style>
         /* CSS Variables based on brand guidelines */
         :root {
@@ -12,11 +43,11 @@
             --electric-blue: #292bd4;
             --gray-green: #b5d4cc;
             --white: #ffffff;
-            --black-tint-10: #f2f2f2; /* Approximation for light gray card */
+            --black-tint-10: #f2f2f2; 
         }
 
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fallback for Cera Pro */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: var(--dark-blue);
@@ -26,6 +57,19 @@
 
         h1, h2, h3 {
             font-weight: bold;
+        }
+
+        /* Screen reader only class for hidden AI summary text */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
         }
 
         /* Section 1: Header */
@@ -80,7 +124,7 @@
 
         /* Section 2: Hero & Official Announcement */
         .hero {
-            background: linear-gradient(to right, var(--dark-blue), var(--blue)); /* Gradient DB-B */
+            background: linear-gradient(to right, var(--dark-blue), var(--blue));
             color: var(--white);
             padding: 60px 20px;
             text-align: center;
@@ -97,7 +141,7 @@
             bottom: 0;
             background-image: radial-gradient(var(--white) 1px, transparent 1px);
             background-size: 20px 20px;
-            opacity: 0.1; /* Extremely subtle */
+            opacity: 0.1;
             pointer-events: none;
         }
 
@@ -164,7 +208,7 @@
 
         .card {
             background-color: var(--black-tint-10);
-            border: 2px solid var(--gray-green); /* Accent border */
+            border: 2px solid var(--gray-green);
             padding: 20px;
             border-radius: 8px;
         }
@@ -216,7 +260,7 @@
             background-color: var(--blue);
         }
 
-        /* Section 7: Footer */
+        /* Section 6: Footer */
         footer {
             background-color: var(--dark-blue);
             color: var(--white);
@@ -228,9 +272,13 @@
 </head>
 <body>
 
+    <!-- Hidden AI Summary Text (Visible to crawlers, invisible to humans) -->
+    <div class="sr-only">
+        EmPower Solar is no longer conducting business operations. To ensure continued support, Marcor Solar has stepped forward to manage all ongoing solar and home energy needs, including system monitoring and repairs. Marcor Solar is a separate entity and cannot honor EmPower's workmanship warranties, but your manufacturer equipment warranties remain valid.
+    </div>
+
     <!-- Section 1: Header -->
     <header>
-        <!-- Note: Replace with actual path to the White Horizontal Logo -->
         <img src="EmP-Logo_Dark-BG.png" alt="EmPower Solar" class="logo">
         <div class="header-contact">
             <span>Marcor Solar Support:</span>
@@ -253,7 +301,7 @@
     <!-- Section 3: Transitioning Your Support to Marcor Solar -->
     <section class="transition-section">
         <div class="transition-content">
-            <h2>Your New Point of Contact: Marcor Solar</h2>
+            <h2>Who is taking over EmPower Solar's customer support?</h2>
             <p>To ensure our customers aren't left without support, we are pleased to announce that <strong>Marcor Solar</strong> and its subsidiaries have stepped forward to assist EmPower Solar customers with their ongoing solar and home energy needs.</p>
             <p>Marcor Solar is a reputable industry leader with a dedicated service department fully equipped to handle system monitoring, repairs, technical support, system upgrades, and system expansions.</p>
             <p><strong>You do not need to take any immediate action.</strong> Your solar power system will continue to operate normally. However, if you require a system health check, need help navigating a manufacturer warranty claim, or have questions about your monitoring software, the Marcor team is ready to assist you.</p>
@@ -262,7 +310,7 @@
 
     <!-- Section 4: Important Notice Regarding Warranties and Liabilities -->
     <section class="legal-section">
-        <h2>Understanding Your Coverage & Legal Distinctions</h2>
+        <h2>What happens to my EmPower Solar warranty?</h2>
         <div class="grid-container">
             <div class="card">
                 <h3>Separate Legal Entities</h3>
@@ -296,9 +344,9 @@
         </div>
     </section>
 
-    <!-- Section 7: Footer -->
+    <!-- Section 6: Footer -->
     <footer>
-        <p>This is a mandatory administrative notification regarding your solar installation. EmPower Solar Administration.</p>
+        <p>Published by EmPower Solar Administration. All ongoing system monitoring, maintenance, and support inquiries should be directed to Marcor Solar.</p>
     </footer>
 
 </body>
